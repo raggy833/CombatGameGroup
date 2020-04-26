@@ -1,5 +1,0 @@
-git add
-git commit
-giagioaj
-git status
-ghaiohga
