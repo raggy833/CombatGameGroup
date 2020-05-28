@@ -24,6 +24,8 @@ public class PlayerWalk : MonoBehaviour
         // 毎回 GetComponent すると負荷が高くなるため
         rb = GetComponent<Rigidbody2D>();
 
+        animator = GetComponent<Animator>();
+
         // 開始時のローカルスケールの値を記憶しておく
         defalutScale = transform.localScale;
     }
@@ -34,6 +36,8 @@ public class PlayerWalk : MonoBehaviour
         var input_h = Input.GetAxis("Horizontal");
         Walk(input_h);
         Turn(input_h);
+        // Todo : walaからstandへのanimation変更 : done
+        animator.SetFloat("PlayerSpeed", Mathf.Abs(input_h));
     }
 
     // 水平方向の移動
@@ -44,13 +48,13 @@ public class PlayerWalk : MonoBehaviour
             //walkのanimation追加
             animator.SetBool("walk", true);
             //接地していないときは水平方向に移動する力を弱める
-           var mult = isGrounded ? 0.5f : 0.3f;
+            var mult = isGrounded ? 0.7f : 0.5f;
 
             //Rigidbody2D に力を加えることでプレイヤーキャラクターを移動させる
-            rb.AddForce(Vector2.right * inputValue * moveSpeed * mult * Time.fixedDeltaTime);
+            float playerHorizontalSpeed = inputValue * moveSpeed * mult * Time.fixedDeltaTime;
+            rb.velocity = new Vector2(playerHorizontalSpeed, rb.velocity.y);
+            //rb.velocity = Vector2.right * inputValue * moveSpeed * mult * Time.fixedDeltaTime;
         }
-        //standのanimationに戻す
-        animator.SetBool("run", false);
     }
 
     // 向きを変える

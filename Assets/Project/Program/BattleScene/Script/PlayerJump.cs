@@ -11,6 +11,7 @@ public class PlayerJump : MonoBehaviour
 
     private PlayerWalk playerWalk;
     private Rigidbody2D rb;
+    public Animator animator;
 
     private void Start()
     {
@@ -19,10 +20,12 @@ public class PlayerJump : MonoBehaviour
         playerWalk = GetComponent<PlayerWalk>();
 
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
+        animator.SetBool("jump", playerWalk.isGrounded);
         if (Input.GetKeyDown(KeyCode.Space))
         {
             // 接地しているときのみ、ジャンプできる（多段ジャンプをさせない）

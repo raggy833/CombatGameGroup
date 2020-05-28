@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Project\Program\BattleScene\Script\PlayerJump.cs" />
+    <Compile Include="Assets\Project\Program\BattleScene\Script\PlayerMovement.cs" />
     <Compile Include="Assets\Project\Program\BattleScene\Script\PlayerWalk.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
