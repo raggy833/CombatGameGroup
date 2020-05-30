@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class CharacterMovement : MonoBehaviour
 
 
 
-    float jumpForce = 150f;       // ジャンプ時に加える力
+    float jumpForce = 300f;       // ジャンプ時に加える力
     float runSpeed = 0.1f;       // 走っている間の速度
 
 
@@ -32,6 +33,8 @@ public class CharacterMovement : MonoBehaviour
     {
 
         GetInputKey();          // 入力を取得
+        ChangeState();          // 状態遷移
+        ChangeAnimation();      // 動きに合わせてアニメーションを設定
         Jump();                 // 地面と接している時に上矢印キー押下でジャンプ
         Move();                 // 入力に応じて移動
 
@@ -45,6 +48,7 @@ public class CharacterMovement : MonoBehaviour
             key = 1;
         if (Input.GetKey(KeyCode.LeftArrow))
             key = -1;
+
     }
 
     void Move()
@@ -75,17 +79,23 @@ public class CharacterMovement : MonoBehaviour
         isGround = ground.IsGround();
         if (isGround)
         {
-            if (key != 0)
+            if (key == 1 || key == -1)
             {
+                //animator.SetBool("isWalk", true);
                 state = "WALK";
+                GetComponent<SpriteRenderer>().flipX = false;
+                transform.localScale = new Vector3(key, 1, 1); // 向きに応じてキャラクターのspriteを反転
+
             }
             else
             {
+                //animator.SetBool("isIdle", true);
                 state = "IDLE";
             }
         }
         else
         {
+            //animator.SetBool("isIdle", true);
             state = "JUMP";
         }
     }
@@ -102,21 +112,21 @@ public class CharacterMovement : MonoBehaviour
                     animator.SetBool("isJump", true);
                     animator.SetBool("isWalk", false);
                     animator.SetBool("isIdle", false);
-                    //stateEffect = 0.5f;
+                    Console.WriteLine("Im jumping");
                     break;
                 case "WALK":
+                    //GetComponent<SpriteRenderer>().flipX = false;
+                    //transform.localScale = new Vector3(key, 1, 1); // 向きに応じてキャラクターのspriteを反転
                     animator.SetBool("isWalk", true);
                     animator.SetBool("isJump", false);
                     animator.SetBool("isIdle", false);
-                    //stateEffect = 1f;
-                    //GetComponent<SpriteRenderer> ().flipX = true;
-                    transform.localScale = new Vector3(key, 1, 1); // 向きに応じてキャラクターのspriteを反転
+                    Console.WriteLine("Im walking");
                     break;
                 default:
-                    animator.SetBool("isIdle", true);
-                    animator.SetBool("isRun", false);
                     animator.SetBool("isJump", false);
-                    //stateEffect = 1f;
+                    animator.SetBool("isWalk", false);
+                    animator.SetBool("isIdle", true);
+                    Console.WriteLine("Im standing");
                     break;
             }
             // 状態の変更を判定するために状態を保存しておく
