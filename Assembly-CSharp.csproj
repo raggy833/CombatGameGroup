@@ -63,6 +63,7 @@
     <Compile Include="Assets\Project\Program\BattleScene\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Project\Program\BattleScene\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Project\Program\BattleScene\Scripts\CharacterController2D.cs" />
+    <Compile Include="Assets\Project\Program\BattleScene\Scripts\EnemyControl.cs" />
     <Compile Include="Assets\Project\Program\BattleScene\Scripts\GameManager.cs" />
     <Compile Include="Assets\Project\Program\BattleScene\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Project\Program\BattleScene\Scripts\Sound.cs" />
