@@ -16,6 +16,8 @@ public class CharacterMovement : MonoBehaviour
 
     // 左右判定用変数
     private int key = 0;
+    // 特定アクション判定用変数
+    private string action_key = "";
     // キャラクターの現在の体勢  
     private string state;
     // キャラクターの遷移前体勢
@@ -56,14 +58,23 @@ public class CharacterMovement : MonoBehaviour
     }
 
 
-    // キーボード入力を左右判定用変数に保存
+    // 左右入力を左右判定用変数に保存
+    // 特定キー入力をアクション判定用変数に保存
     void GetInputKey()
     {
         key = 0;
+        action_key = "";
         if (Input.GetKey(KeyCode.RightArrow))
             key = 1;
         if (Input.GetKey(KeyCode.LeftArrow))
             key = -1;
+        if (Input.GetKey(KeyCode.F))
+            action_key = "attack";
+        if (Input.GetKey(KeyCode.T))
+            action_key = "taunt";
+        if (Input.GetKey(KeyCode.D))
+            action_key = "dying";
+
 
     }
 
@@ -107,7 +118,7 @@ public class CharacterMovement : MonoBehaviour
             if (key == 1 || key == -1)
             {
 
-                // 歩く体勢
+                // 徒歩状態を保存
                 state = "WALK";
 
                 // 左右入力の切り替えによりキャラクターの反転
@@ -115,9 +126,24 @@ public class CharacterMovement : MonoBehaviour
                 transform.localScale = new Vector3(key, 1, 1);
 
             }
+            // 攻撃状態を保存
+            else if (action_key == "attack")
+            {
+                state = "ATTACK";
+            }
+            // 叫ぶ状態を保存
+            else if (action_key == "taunt")
+            {
+                state = "TAUNT";
+            }
+            // 叫ぶ状態を保存
+            else if (action_key == "dying")
+            {
+                state = "DYING";
+            }
             else
             {
-                // アイドル体勢
+                // アイドル状態保存
                 state = "IDLE";
             }
         }
@@ -126,6 +152,7 @@ public class CharacterMovement : MonoBehaviour
             // ジャンプの体勢
             state = "JUMP";
         }
+        action_key = "";
     }
 
 
@@ -142,18 +169,54 @@ public class CharacterMovement : MonoBehaviour
                     animator.SetBool("isJump", true);
                     animator.SetBool("isWalk", false);
                     animator.SetBool("isIdle", false);
+                    animator.SetBool("isAttack", false);
+                    animator.SetBool("isTaunt", false);
+                    animator.SetBool("isDying", false);
                     break;
                 case "WALK":
                     // 歩く体勢の設定
-                    animator.SetBool("isWalk", true);
                     animator.SetBool("isJump", false);
+                    animator.SetBool("isWalk", true);
                     animator.SetBool("isIdle", false);
+                    animator.SetBool("isAttack", false);
+                    animator.SetBool("isTaunt", false);
+                    animator.SetBool("isDying", false);
+                    break;
+                case "ATTACK":
+                    // 攻撃体勢の設定
+                    animator.SetBool("isJump", false);
+                    animator.SetBool("isWalk", false);
+                    animator.SetBool("isIdle", false);
+                    animator.SetBool("isAttack", true);
+                    animator.SetBool("isTaunt", false);
+                    animator.SetBool("isDying", false);
+                    break;
+                case "TAUNT":
+                    // 叫ぶ体勢の設定
+                    animator.SetBool("isJump", false);
+                    animator.SetBool("isWalk", false);
+                    animator.SetBool("isIdle", false);
+                    animator.SetBool("isAttack", false);
+                    animator.SetBool("isTaunt", true);
+                    animator.SetBool("isDying", false);
+                    break;
+                case "DYING":
+                    // 倒れる体勢の設定
+                    animator.SetBool("isJump", false);
+                    animator.SetBool("isWalk", false);
+                    animator.SetBool("isIdle", false);
+                    animator.SetBool("isAttack", false);
+                    animator.SetBool("isTaunt", false);
+                    animator.SetBool("isDying", true);
                     break;
                 default:
                     // 立っている体勢の設定
                     animator.SetBool("isJump", false);
                     animator.SetBool("isWalk", false);
                     animator.SetBool("isIdle", true);
+                    animator.SetBool("isAttack", false);
+                    animator.SetBool("isTaunt", false);
+                    animator.SetBool("isDying", false);
                     break;
             }
             // 状態の変更を判定するために状態を保存しておく
