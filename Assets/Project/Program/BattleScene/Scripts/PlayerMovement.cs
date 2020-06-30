@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
     // Rigidbody2Dの定義
     private Rigidbody2D myRigidbody2D;
 
+    // パンチのエフェクト
+    public GameObject punchEffect;
+
     // パンチ当たり判定のポジション
     public Transform punchAttackPoint;
     // 当たり判定の範囲
@@ -157,6 +160,9 @@ public class PlayerMovement : MonoBehaviour
 
         // Detect enemy in range of attack
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(punchAttackPoint.position, punchAttackRange, enemyLayers);
+
+        // 
+        Instantiate(punchEffect, punchAttackPoint.transform.position, Quaternion.identity);
 
         // 攻撃が当たった敵への処理
         foreach(Collider2D enemy in hitEnemies)
