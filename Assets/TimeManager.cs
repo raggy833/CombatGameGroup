@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
 {
+    //変数宣言
+    public GameManager gameManager;	// ゲームマネージャー
+
     //カウントダウン
     public float countdown = 60.0f;
  
@@ -17,32 +20,6 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //クリックされたとき
-        if(Input.GetMouseButtonDown(0))
-        {
-            //ポーズ中にクリックされたとき
-            if(isPose)
-            {
-                //ポーズ状態を解除する
-                isPose = false;
-            }
-            //進行中にクリックされたとき
-            else{
-                //ポーズ状態にする
-                isPose = true;
-            }
-        }
- 
-        //ポーズ中かどうか
-        if (isPose)
-        {
-            //ポーズ中であることを表示
-            timeText.text = "PAUSE";
- 
-            //カウントダウンしない
-            return;
-        }
- 
         //時間をカウントする
         countdown -= Time.deltaTime;
  
@@ -53,6 +30,8 @@ public class TimeManager : MonoBehaviour
         if (countdown <= 0)
         {
             timeText.text = "TimeUp!";
+            //結果画面のポップアップ
+            gameManager.GameSet();
         }
     }
 }

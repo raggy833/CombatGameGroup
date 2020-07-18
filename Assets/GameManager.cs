@@ -6,11 +6,19 @@ using UnityEngine.UI; // UI機能の利用に必要なusing文
 public class GameManager : MonoBehaviour
 {
     	// メンバ変数宣言
+	public int currentRoundNum = 0;//ラウンド番号
+	public GameObject popup;
+
 	public Slider playerHPSlider;//プレーヤーHPスライダー
 	public Slider enemyHPSlider;//敵HPスライダー
 	public Image playerEnergy;//プレーヤーエネルギー
 	public Image enemyEnergy;//敵エネルギー
 
+	//ラウンド開始処理
+	public void NextRound(){
+		currentRoundNum += 1;//ラウンド数加算
+		popup.SetActive(false);//ゲームセット画面を非表示に
+	}
 	// プレイヤーの残り体力をUIに適用(PlayerControllerから呼び出される)
 	// 引数health : 残り体力
 	public void SetInitialPlayerHealthUI (int health)
@@ -67,6 +75,12 @@ public class GameManager : MonoBehaviour
 		}else{
 			playerEnergy.color = new Color(0.0f, 1.0f, 0.0f, 1.0f);
 		}
+	}
+
+	public void GameSet(){
+		//ゲーム結果をpopupにセット
+
+		popup.SetActive(true);//ゲームセット画面を表示
 	}
 
 }
