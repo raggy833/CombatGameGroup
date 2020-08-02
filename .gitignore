@@ -72,5 +72,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # Unity Cache files
-/Library/PackageCache
-/Library/metadata
+/Library/PackageCache/
+/Library/metadata/
