@@ -2,13 +2,17 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
+[Aa]ssets/AssetStoreTools*
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Ll]ocal[Cc]ache/
+[Uu]nityGenerated/
+
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -48,6 +52,9 @@ ExportedObj/
 *.VC.db
 *.meta
 
+# file on crash reports
+sysinfo.txt
+
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
@@ -74,3 +81,15 @@ crashlytics-build.properties
 # Unity Cache files
 /Library/PackageCache/
 /Library/metadata/
+
+###
+# OS generated
+###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
