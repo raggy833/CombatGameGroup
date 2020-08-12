@@ -81,6 +81,7 @@ crashlytics-build.properties
 # Unity Cache files
 /Library/PackageCache/
 /Library/metadata/
+/Library
 
 ###
 # OS generated
