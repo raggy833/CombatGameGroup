@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Project/Program/_MainMenu/MainMenu.unity
+    guid: c713038ff22ccfd438d67728104c2276
+  - enabled: 1
+    path: Assets/Project/Program/_CharacterSelect/CharacterSelectScene.unity
+    guid: 899122ec9ea4f3e488319388c4528cec
+  - enabled: 1
+    path: Assets/Project/Program/_BattleStage/BattleStageScene.unity
+    guid: e4a08cad1ad37284e91cfa7b11544c4c
+  - enabled: 1
+    path: Assets/Project/Program/_GameModeSelect/GameModeSelect.unity
+    guid: 3e94ef4f772c86842856691e2f29ac2f
+  - enabled: 1
+    path: Assets/Project/Program/_Setting/Setting.unity
+    guid: f580050a808f7c240a7a32cfb5a254a6
+  - enabled: 1
+    path: Assets/Project/Program/_StageSelect/StageSelect.unity
+    guid: 12d58a027a3dc074a9d8bdb014fd06cb
   m_configObjects: {}

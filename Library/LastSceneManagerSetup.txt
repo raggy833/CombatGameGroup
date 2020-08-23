@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Project/Program/BattleStage/BattleStageScene.unity
+- path: Assets/Project/Program/_MainMenu/MainMenu.unity
   isLoaded: 1
   isActive: 1
