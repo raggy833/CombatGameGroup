@@ -1,0 +1,788 @@
+fileFormatVersion: 2
+guid: 3135ef430924c55489c6b1c4a185efea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2833507291227125746
+    second: ui-icons-buttons-set-aqua_0
+  - first:
+      213: 4456266305480725347
+    second: ui-icons-buttons-set-aqua_1
+  - first:
+      213: 2520566353972538066
+    second: ui-icons-buttons-set-aqua_2
+  - first:
+      213: -6215329473246327166
+    second: ui-icons-buttons-set-aqua_3
+  - first:
+      213: 5350650212544015870
+    second: ui-icons-buttons-set-aqua_4
+  - first:
+      213: -3141760362715328917
+    second: ui-icons-buttons-set-aqua_5
+  - first:
+      213: -2615880517205593876
+    second: ui-icons-buttons-set-aqua_6
+  - first:
+      213: 7388706142740629354
+    second: ui-icons-buttons-set-aqua_7
+  - first:
+      213: 1863499194978686628
+    second: ui-icons-buttons-set-aqua_8
+  - first:
+      213: 854821164643952424
+    second: ui-icons-buttons-set-aqua_9
+  - first:
+      213: -8397254796611421180
+    second: ui-icons-buttons-set-aqua_10
+  - first:
+      213: -3251515474949390172
+    second: ui-icons-buttons-set-aqua_11
+  - first:
+      213: 3072729016062643324
+    second: ui-icons-buttons-set-aqua_12
+  - first:
+      213: 1965471379006364109
+    second: ui-icons-buttons-set-aqua_13
+  - first:
+      213: -446825633923090103
+    second: ui-icons-buttons-set-aqua_14
+  - first:
+      213: 4654036817151797138
+    second: ui-icons-buttons-set-aqua_15
+  - first:
+      213: -323338475617918854
+    second: ui-icons-buttons-set-aqua_16
+  - first:
+      213: -2792985271472686798
+    second: ui-icons-buttons-set-aqua_17
+  - first:
+      213: -133981982349242554
+    second: ui-icons-buttons-set-aqua_18
+  - first:
+      213: 5522452107735370478
+    second: ui-icons-buttons-set-aqua_19
+  - first:
+      213: 5800100069958619710
+    second: ui-icons-buttons-set-aqua_20
+  - first:
+      213: 2211876633060900986
+    second: ui-icons-buttons-set-aqua_21
+  - first:
+      213: -1124348585578924942
+    second: ui-icons-buttons-set-aqua_22
+  - first:
+      213: -1327154504662052358
+    second: ui-icons-buttons-set-aqua_23
+  - first:
+      213: -4860118516032157731
+    second: ui-icons-buttons-set-aqua_24
+  - first:
+      213: -8516614625212923502
+    second: ui-icons-buttons-set-aqua_25
+  - first:
+      213: 4460368138035015748
+    second: ui-icons-buttons-set-aqua_26
+  - first:
+      213: 8769710453147580323
+    second: ui-icons-buttons-set-aqua_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 414
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7721a6ed3a25720800000000000000
+      internalID: 2833507291227125746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 414
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36398b23896d7dd30800000000000000
+      internalID: 4456266305480725347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_2
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 414
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2daa5519eb9daf220800000000000000
+      internalID: 2520566353972538066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_3
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 414
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e032936c6beb9a0800000000000000
+      internalID: -6215329473246327166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_4
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 414
+        width: 121
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efded04f404514a40800000000000000
+      internalID: 5350650212544015870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_5
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 414
+        width: 121
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e43fa88993664d0800000000000000
+      internalID: -3141760362715328917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_6
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 414
+        width: 121
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce07815778682bbd0800000000000000
+      internalID: -2615880517205593876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 284
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a674dcbf615f98660800000000000000
+      internalID: 7388706142740629354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_8
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 284
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a65ee305aa7cd910800000000000000
+      internalID: 1863499194978686628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_9
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 284
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827a619f15fecdb00800000000000000
+      internalID: 854821164643952424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_10
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 284
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cf787c045f67b80800000000000000
+      internalID: -8397254796611421180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_11
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 284
+        width: 121
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0c4fd17eb40e2d0800000000000000
+      internalID: -3251515474949390172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_12
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 284
+        width: 121
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c037592c684aa20800000000000000
+      internalID: 3072729016062643324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_13
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 284
+        width: 121
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc91fd14ec1c64b10800000000000000
+      internalID: 1965471379006364109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_14
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 154
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949b97d047e8cc9f0800000000000000
+      internalID: -446825633923090103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 154
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2972ce9b3d5769040800000000000000
+      internalID: 4654036817151797138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_16
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 154
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70e39a9e55438bf0800000000000000
+      internalID: -323338475617918854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_17
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 154
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239f8f681b25d39d0800000000000000
+      internalID: -2792985271472686798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_18
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 154
+        width: 121
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f45cfc810042ef0800000000000000
+      internalID: -133981982349242554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_19
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 154
+        width: 121
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea8caacee0b3ac40800000000000000
+      internalID: 5522452107735370478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_20
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 154
+        width: 121
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e321a9b88481e7050800000000000000
+      internalID: 5800100069958619710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_21
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 24
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a700598241a22be10800000000000000
+      internalID: 2211876633060900986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 24
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274fad02be28560f0800000000000000
+      internalID: -1124348585578924942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_23
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 24
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af11f837200059de0800000000000000
+      internalID: -1327154504662052358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_24
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 24
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7ca9da5f36d8cb0800000000000000
+      internalID: -4860118516032157731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_25
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 24
+        width: 121
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291894f0f18eec980800000000000000
+      internalID: -8516614625212923502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_26
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 24
+        width: 121
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4403c03803966ed30800000000000000
+      internalID: 4460368138035015748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-aqua_27
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 24
+        width: 121
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a734e6713544b970800000000000000
+      internalID: 8769710453147580323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3956729c75e2cf9409ba5eefb1a9d537
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
